@@ -6,7 +6,7 @@ import chess.ChessPiece;
 import chess.Color;
 
 public class Knight extends ChessPiece {
-
+	
 	public Knight(Board board, Color color) {
 		super(board, color);
 		// TODO Auto-generated constructor stub
@@ -21,6 +21,8 @@ public class Knight extends ChessPiece {
 		ChessPiece p = (ChessPiece) getBoard().piece(position);
 		return p == null || p.getColor() != getColor();
 	}
+	
+
 	
 	@Override
 	public boolean[][] possibleMoves() {
